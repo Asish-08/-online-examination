@@ -1,0 +1,55 @@
+<html>
+<head><title>Online Examination System</title></head>
+<body>
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box}
+    .submitbtn {
+      background-color: #3279E8;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    button:hover {
+      opacity:1;
+    }
+    </style>
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js" ></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC1Zf_VsRWkrlrxLQDNYBJ1Ait1UCcqhIs",
+    authDomain: "online-examination-syste-b1886.firebaseapp.com",
+    databaseURL: "https://online-examination-syste-b1886.firebaseio.com",
+    projectId: "online-examination-syste-b1886",
+    storageBucket: "online-examination-syste-b1886.appspot.com",
+    messagingSenderId: "642625682916",
+    appId: "1:642625682916:web:722a09d9fea544bd4a1bf1",
+    measurementId: "G-98L1EW8YGE"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src = "trail.js"></script>
+<button type = "button" onclick =submit() class="submitbtn">Submit</button>
+<button type = "button" onclick =logout() class="logoutbtn">LogOut</button>
+<h1 id = "scorecard"></h1>
+</body>
+</html>

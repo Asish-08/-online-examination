@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+  * {box-sizing: border-box}
+
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    background-color: #3279E8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  button:hover {
+    opacity:1;
+  }
+
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #E04F49;
+  }
+
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+
+  </style>
+  <h1>Registration form</h1>
+  <p>Please fill in this form to create an account.</p>
+
+  <label for="Name"><b>Name(User name)</b></label>
+  <input type="text" id="Name" placeholder="Enter Your Name" name="name" required>
+
+  <label for="Father Name"><b>Father Name</b></label>
+  <input type="text" id="Father Name" placeholder="Enter Father's Name" name="Father Name" required>
+
+  <label for="Institution Name"><b>Institution Name</b></label>
+  <input type="text" id="Institution" placeholder="Enter Institution" name="Institution" required>
+
+  <b><b>Select your Course</b><select>
+  	<option value="course">B.E/B.Tech</option>
+  	<option value="course">M.E/M.Tech</option>
+  	<option value="course">MCA</option>
+  	<option value="course">MSC</option>
+  </select><br><br>
+
+  <b><b>Select your Year of Studying</b><select>
+  	<option value="year">1</option>
+  	<option value="year">2</option>
+  	<option value="year">3</option>
+  	<option value="year">4</option>
+  </select><br><br>
+
+  <label for="email"><b>Email</b></label>
+  <input type="text" id="email" placeholder="Enter Your Email" name="email" required >
+
+  <label for="psw"><b>Create password</b></label>
+  <input type="password" id="password" placeholder="Enter Password" name="password" required >
+
+  <label for="psw-repeat"><b>Re-enter Password</b></label>
+  <input type="text" id="rpassword" placeholder="Re-Enter Your Password" name="rpassword" required >
+
+  <button type="button" onclick=cancel() class="cancelbtn">Cancel</button>
+  <button type="button" onclick=register() class="signupbtn">register</button>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>

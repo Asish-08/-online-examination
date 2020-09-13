@@ -1,0 +1,52 @@
+<html>
+<head><title>Online Examination System</title></head>
+<body>
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js" ></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyC1Zf_VsRWkrlrxLQDNYBJ1Ait1UCcqhIs",
+    authDomain: "online-examination-syste-b1886.firebaseapp.com",
+    databaseURL: "https://online-examination-syste-b1886.firebaseio.com",
+    projectId: "online-examination-syste-b1886",
+    storageBucket: "online-examination-syste-b1886.appspot.com",
+    messagingSenderId: "642625682916",
+    appId: "1:642625682916:web:722a09d9fea544bd4a1bf1",
+    measurementId: "G-98L1EW8YGE"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+
+  </script>
+  <script src="administrator.js"></script>
+  <button type = "button" onclick ="logout()" id="logout" style="position: absolute; right:10px">Log Out</button>
+  <div class="main">
+  <table border="0">
+    <font color="white">
+    <tr><td><font color="#6D214F"><b>Question-</b></font></td><td> <input type = "text" id = "q" ></body></td></tr>
+     <tr><td><font color="#6D214F"><b>Option A-</b></font></td><td> <input type = "text" id = "a" ></body></td></tr>
+    <tr><td><font color="#6D214F"><b> Option B-</b></font></td><td><input type = "text" id = "b" ></body></td></tr>
+    <tr><td><font color="#6D214F"><b>Option C-</b></font></td><td><input type = "text" id = "c" ></body></td></tr>
+    <tr><td><font color="#6D214F"><b> Option D-</b></font></td><td> <input type = "text" id = "d" ></body></td></tr>
+    <tr><td> <font color="#6D214F"><b>Answer-</b></font></td><td>  <input type = "text" id = "ans" ></body></td></tr>
+   <tr><td></td><td><button  type = "button" onclick = upload() id="update">Upload</button></td></tr>
+
+</table
+  <button type = "button" onclick = showscores() id="score">Show Scores</button>
+
+  </div>
+  </body>
+  </html>
